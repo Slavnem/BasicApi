@@ -34,10 +34,12 @@ class UsersGateway {
     // Yeni Kayıt Oluşturmak
     public function create(array $datas): string {
         // kayıt oluşturan sorgu
-        $sql = "INSERT INTO ". self::$table
-        ."(". self::$column2 .",". self::$column3 .",".
-        self::$column4 .") VALUES (:".
-            self::$param_email ." :". self::$param_username ." :". self::$param_nickname .")";
+        $sql = "INSERT INTO ". self::$table ."(". 
+        self::$column2 .",". self::$column3 .",". self::$column4
+        .") VALUES ("
+            .":". self::$param_email .","
+            .":". self::$param_username .","
+            .":". self::$param_nickname .")";
 
         $stmt = $this->connection->prepare($sql); // sorgu parametreleri için bağlantı
         
