@@ -1,6 +1,6 @@
 # Basic Test Api
 ## Version: 1.0.0
-A simple api shared for simple and instructive purposes. The code fragment was copied from another user and some minor changes were made to it. Actual unannotated and uncommented code from the owner: https://github.com/daveh/php-rest-api
+A simple api shared for simple and tutorial purposes. The code fragment was copied from another user and some minor changes were made to it. Link to the original code: https://github.com/daveh/php-rest-api
 
 ## Debug
 Debugged on Debian 12 Bookworm x64 with bash terminal and curl
